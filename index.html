@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+
+   <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+      body {
+         /*      box-sizing: border-box;*/
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+      .uc-all-wrapp {
+         max-width: 1200px;
+         margin: 0 auto;
+      }
+
+      .uc-a1-panel {
+         padding: 50px 50px 180px 50px;
+         background: #ffffff url(https://internetsolution.com.ua/Pictures/testdesign/baner1.jpg);
+         background-size: cover;
+      }
+
+
+      .uc-a1-texts {
+         background-color: #fff;
+         padding: 30px;
+         width: 50%;
+      }
+
+      .uc-a1-header {
+         font-size: 40px;
+         margin: 0 0 20px 0;
+         font-weight: 600;
+         font-family: 'Philosopher';
+      }
+
+      .uc-a1-sub-header {
+         font-size: 26px;
+         margin: 0 0 20px 0;
+      }
+
+      .uc-a1-text {
+         font-size: 16px;
+         margin: 0 0 20px 0;
+
+      }
+
+      .uc-a1-images {
+         width: 100%;
+      }
+
+      .uc-a1-images img {
+         width: 100%;
+      }
+
+      .uc-a1-btn {
+         display: inline-block;
+         padding: 15px 40px;
+         background-color: #0d6327;
+         color: #fff;
+         font-size: 16px;
+         text-decoration: none !important;
+         font-weight: 600;
+         transition: .4s;
+      }
+
+      .uc-a1-btn:hover {}
+
+      @-webkit-keyframes bob-on-hover {
+         0% {
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+         }
+
+         50% {
+            -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+         }
+
+         100% {
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+         }
+      }
+
+      @keyframes bob-on-hover {
+         0% {
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+         }
+
+         50% {
+            -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+         }
+
+         100% {
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+         }
+      }
+
+      @-webkit-keyframes bob-on-hover-float {
+         100% {
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+         }
+      }
+
+      @keyframes bob-on-hover-float {
+         100% {
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+         }
+      }
+
+      .bob-on-hover {
+         display: inline-block;
+         vertical-align: middle;
+         -webkit-transform: perspective(1px) translateZ(0);
+         transform: perspective(1px) translateZ(0);
+         box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      }
+
+      .bob-on-hover:hover,
+      .bob-on-hover:focus,
+      .bob-on-hover:active {
+         -webkit-animation-name: bob-on-hover-float, bob-on-hover;
+         animation-name: bob-on-hover-float, bob-on-hover;
+         -webkit-animation-duration: 0.3s, 1.5s;
+         animation-duration: 0.3s, 1.5s;
+         -webkit-animation-delay: 0s, 0.3s;
+         animation-delay: 0s, 0.3s;
+         -webkit-animation-timing-function: ease-out, ease-in-out;
+         animation-timing-function: ease-out, ease-in-out;
+         -webkit-animation-iteration-count: 1, infinite;
+         animation-iteration-count: 1, infinite;
+         -webkit-animation-fill-mode: forwards;
+         animation-fill-mode: forwards;
+         -webkit-animation-direction: normal, alternate;
+         animation-direction: normal, alternate;
+      }
+
+
+      @media screen and (max-width: 890px) {
+         .uc-a1-panel {
+            padding: 30px 30px 180px 30px;
+         }
+
+         .uc-a1-texts {
+            padding: 25px;
+            width: 80%;
+         }
+
+         .uc-a1-header {
+            font-size: 36px;
+            margin: 0 0 15px 0;
+            font-weight: 600;
+         }
+
+         .uc-a1-sub-header {
+            font-size: 24px;
+            margin: 0 0 15px 0;
+         }
+
+         .uc-a1-text {
+            font-size: 16px;
+            margin: 0 0 15px 0;
+
+         }
+      }
+
+      @media screen and (max-width: 600px) {
+         .uc-a1-panel {
+            padding: 20px 20px 160px 20px;
+         }
+
+         .uc-a1-texts {
+            padding: 20px;
+            width: auto;
+         }
+      }
+
+      /*---------------------------------------*/
+
+      .uc-a2-panel {
+         margin: 0px 0 -130px;
+         transform: translateY(-130px);
+      }
+
+      .uc-a2-wrapper {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-around;
+
+      }
+
+      .uc-a2-item {
+         display: flex;
+         flex-direction: column;
+         flex: 1 1 0px;
+         padding: 30px 20px;
+         background-color: #fff;
+         margin: 15px 30px;
+         text-align: center;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         transition: .3s;
+      }
+
+      .uc-a2-item:hover {
+         transform: translateY(-5px);
+         background-color: #0d6327;
+         color: #fff;
+         transition: .3s;
+      }
+
+      .uc-a2-images {
+         padding: 10px 0;
+
+      }
+
+      .uc-a2-images {
+         width: 64px;
+         height: 64px;
+      }
+
+      .uc-a2-images {
+
+         height: 64px;
+         width: 64px;
+         text-align: center;
+         margin: 0 auto;
+         transition: .3s;
+      }
+
+      .uc-a2-images_1 {
+         background: transparent url(https://internetsolution.com.ua/Pictures/testdesign/001-icon.png) no-repeat;
+
+      }
+
+      .uc-a2-images_2 {
+         background: transparent url(https://internetsolution.com.ua/Pictures/testdesign/002-icon.png) no-repeat;
+
+      }
+
+      .uc-a2-images_3 {
+         background: transparent url(https://internetsolution.com.ua/Pictures/testdesign/003-icon.png) no-repeat;
+
+      }
+
+      .uc-a2-item:hover .uc-a2-images_1 {
+         background: transparent url(https://internetsolution.com.ua/Pictures/testdesign/004-icon.png) no-repeat;
+         transition: .3s;
+      }
+
+      .uc-a2-item:hover .uc-a2-images_2 {
+         background: transparent url(https://internetsolution.com.ua/Pictures/testdesign/005-icon.png) no-repeat;
+         transition: .3s;
+      }
+
+      .uc-a2-item:hover .uc-a2-images_3 {
+         background: transparent url(https://internetsolution.com.ua/Pictures/testdesign/006-icon.png) no-repeat;
+         transition: .3s;
+      }
+
+      .uc-a2-img {
+         width: 64px;
+         height: 64px;
+      }
+
+      .uc-a2-title {
+         font-family: 'Philosopher';
+         font-size: 20px;
+         font-weight: 600;
+         margin: 0 0 5px 0;
+      }
+
+      .uc-a2-text {
+         font-size: 16px;
+      }
+
+      @media screen and (max-width: 890px) {
+         .uc-a2-item {
+
+            flex: 1 1 170px;
+
+            margin: 15px 20px;
+
+         }
+      }
+
+      /*------------------------------------*/
+
+      .uc-title {
+         text-align: center;
+      }
+
+      .uc-a3-panel {
+         padding: 5px 0;
+         background: #fff url(https://internetsolution.com.ua/Pictures/testdesign/baner2.jpeg);
+      }
+
+      .uc-a3-wrapper {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         transition: 1s;
+      }
+
+      .uc-a3-content {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+
+      .uc-a3-item {
+         width: 32%;
+         padding: 5px;
+      }
+
+      .uc-a3-image {}
+
+      .uc-a3-image img {
+         width: 100%;
+      }
+
+      .uc-a3-item-content {
+         padding: 40px;
+      }
+
+      .uc-a3-item-special {
+         background-color: #fff;
+         text-align: left;
+         margin: 5px 5px 10px 5px;
+         padding: 0 !important;
+      }
+
+      .uc-a3-item-cont-title {
+         font-size: 20px;
+         font-weight: 600;
+         font-family: 'Philosopher';
+      }
+
+
+      .uc-a3-item-cont-text {
+         font-size: 16px;
+      }
+
+      .uc-a3-item-hov1,
+      .uc-a3-item-hov2,
+      .uc-a3-item-hov3,
+      .uc-a3-item-hov4 {
+         transition: 1s;
+      }
+
+
+
+      .uc-a3-wrapper:hover .uc-a3-item-hov1 {
+         transform: translateX(100%);
+         transition: 1s;
+      }
+
+      .uc-a3-wrapper:hover .uc-a3-item-hov2 {
+         transform: translateX(-102%);
+         transition: 1s;
+      }
+
+      .uc-a3-wrapper:hover .uc-a3-item-hov3 {
+         transform: translateX(103%);
+         transition: 1s;
+      }
+
+      .uc-a3-wrapper:hover .uc-a3-item-hov4 {
+         transform: translateX(-100%);
+         transition: 1s;
+      }
+
+      @media screen and (max-width: 1100px) {
+         .uc-a3-item-none {}
+
+         .uc-a3-item-cont-text {
+            font-size: 13px;
+         }
+
+         .uc-a3-item-content {
+            padding: 15px;
+         }
+      }
+
+      @media screen and (max-width: 990px) {
+         .uc-a3-item-none {
+            display: none;
+         }
+
+         .uc-a3-item-cont-text {
+            font-size: 14px;
+         }
+
+         .uc-a3-item-content {
+            padding: 25px;
+         }
+
+         .uc-a3-item {
+            width: 45%;
+
+         }
+      }
+
+      @media screen and (max-width: 690px) {
+         .uc-a3-item-small-none {
+            display: none;
+         }
+
+         .uc-a3-item-cont-text {
+            font-size: 14px;
+         }
+
+         .uc-a3-item {
+            width: 90%;
+            padding: 20px;
+            transform: none;
+         }
+
+         .uc-a3-wrapper:hover .uc-a3-item-hov1,
+         .uc-a3-wrapper:hover .uc-a3-item-hov2,
+         .uc-a3-wrapper:hover .uc-a3-item-hov3,
+         .uc-a3-wrapper:hover .uc-a3-item-hov4 {
+            transform: translate(0);
+         }
+
+         .uc-a3-panel {
+            padding: 15px 0;
+         }
+
+      }
+
+      /*-------------------*/
+
+
+      .uc-a4-panel {
+         padding: 20px 10px;
+
+      }
+
+      .uc-a4-wrapper {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-around;
+      }
+
+      .uc-a4-item {
+         display: flex;
+         flex-direction: column;
+         flex: 1 1 0;
+         padding: 20px;
+         text-align: center;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         margin: 0 40px 20px;
+         background-color: #fff;
+         position: relative;
+         transition: .4s;
+      }
+
+      .uc-a4-item:hover {
+         box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+         transition: .4s;
+      }
+
+      .uc-a4-item-1::after,
+      .uc-a4-item-1::before {
+         content: '';
+         background-color: #0d6327;
+         position: absolute;
+         border-radius: 5px;
+         z-index: -1;
+         transition: .4s;
+      }
+
+      .uc-a4-item-1:hover::after {
+         transform: rotate(65deg);
+         transition: .4s;
+      }
+
+      .uc-a4-item-1:hover::before {
+         transform: rotate(-25deg);
+         transition: .4s;
+      }
+
+      .uc-a4-item-1::after {
+         width: 50px;
+         height: 50px;
+         top: 25px;
+         left: -25px;
+         transform: rotate(25deg);
+      }
+
+      .uc-a4-item-1::before {
+         width: 70px;
+         height: 70px;
+         bottom: -25px;
+         right: 95px;
+         transform: rotate(45deg);
+      }
+
+      .uc-a4-item-2::after,
+      .uc-a4-item-2::before {
+         content: '';
+         background-color: #0d6327;
+         position: absolute;
+         border-radius: 5px;
+         z-index: -1;
+         transition: .4s;
+      }
+
+
+
+      .uc-a4-item-2::before {
+         width: 80px;
+         height: 80px;
+         bottom: -40px;
+         right: 70px;
+         transform: rotate(15deg);
+      }
+
+
+
+      .uc-a4-item-2:hover::before {
+         transform: rotate(-15deg);
+         transition: .4s;
+      }
+
+      .uc-a4-item-3::after,
+      .uc-a4-item-3::before {
+         content: '';
+         background-color: #0d6327;
+         position: absolute;
+         border-radius: 5px;
+         z-index: -1;
+      }
+
+      .uc-a4-item-3::after {
+         width: 50px;
+         height: 50px;
+         top: -25px;
+         right: -25px;
+         transform: rotate(25deg);
+         transition: .4s;
+      }
+
+      .uc-a4-item-3::before {
+         width: 50px;
+         height: 50px;
+         bottom: 25px;
+         right: -25px;
+         transform: rotate(45deg);
+
+      }
+
+      .uc-a4-item-3:hover::before {
+         transform: rotate(85deg);
+         transition: .4s;
+      }
+
+      .uc-a4-item-3:hover::after {
+         transform: rotate(-15deg);
+         transition: .4s;
+      }
+
+      .uc-a4-images img {
+         width: 64px;
+         height: 64px;
+         padding: 10px 0;
+         z-index: -5;
+
+      }
+
+      .uc-a4-title {
+         font-size: 20px;
+         font-weight: 600;
+         color: #333;
+         font-family: 'Philosopher';
+      }
+
+      .uc-a4-text {
+         font-size: 16px;
+      }
+
+      @media screen and (max-width: 900px) {
+         .uc-a4-item {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 0;
+
+            margin: 0 10px 20px;
+
+         }
+      }
+
+      @media screen and (max-width: 780px) {
+         .uc-a4-item {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 180px;
+
+            margin: 0 10px 20px;
+
+         }
+      }
+
+      /*------------------------------------*/
+
+      .uc-a5-panel {
+         padding: 40px 100px 20px;
+         text-align: center;
+         background: #fff url(https://internetsolution.com.ua/Pictures/testdesign/baner2.jpeg);
+      }
+
+      details {
+         display: block;
+         width: 100%;
+         border-radius: 8px;
+         overflow: hidden;
+         margin-bottom: 1.5rem;
+         background-color: #0d6327;
+         color: #fff;
+      }
+
+
+      summary::-webkit-details-marker {
+         display: none;
+      }
+
+      summary::-moz-list-bullet {
+         list-style-type: none;
+      }
+
+      summary::marker {
+         display: none;
+      }
+
+      summary {
+         color: #333;
+         display: block;
+         padding: .5em 1.5em .5em 1.5em;
+
+         font-size: 1.4em;
+         cursor: pointer;
+         position: relative;
+         background-color: #fff;
+      }
+
+      summary:before {
+         top: .5em;
+         right: .5em;
+         color: transparent;
+         background: url(https://internetsolution.com.ua/Pictures/testdesign/007-icon.png) no-repeat 50% 50% / 1em 1em;
+         width: 1em;
+         height: 1em;
+         content: "";
+         position: absolute;
+         transition: transform .5s;
+      }
+
+      summary::after {
+         top: 5em;
+         left: -5em;
+         color: transparent;
+         background: url(https://internetsolution.com.ua/Pictures/testdesign/008-icon.png) no-repeat 50% 50% / 1em 1em;
+         width: 1em;
+         height: 1em;
+         content: "";
+         position: absolute;
+         transition: .5s;
+      }
+
+      summary:hover::after {
+         top: .5em;
+         left: .5em;
+         color: transparent;
+         background: url(https://internetsolution.com.ua/Pictures/testdesign/008-icon.png) no-repeat 50% 50% / 1em 1em;
+         width: 1em;
+         height: 1em;
+         content: "";
+         position: absolute;
+         transition: .5s;
+      }
+
+      details[open]>summary:before {
+         transform: rotate(180deg);
+      }
+
+      summary~* {
+         padding: 0 1em 10px 1.4em;
+      }
+
+      details[open] summary~* {
+         animation: sweep .5s ease-in-out;
+      }
+
+
+
+      @keyframes sweep {
+         0% {
+            opacity: 0;
+         }
+
+         100% {
+            opacity: 1;
+         }
+      }
+
+      summary:focus {
+         outline: 0;
+
+      }
+
+      @media screen and (max-width: 900px) {
+         .uc-a5-panel {
+            padding: 40px;
+         }
+      }
+
+      @media screen and (max-width: 700px) {
+         summary {
+            padding: .5em 1.4em .5em 1.4em;
+         }
+
+         .uc-a5-panel {
+            padding: 20px 15px;
+         }
+      }
+   </style>
+   <div class="uc-all-wrapp">
+      <div class="uc-a1-panel">
+
+         <div class="uc-a1-texts">
+            <div class="uc-a1-header">
+               Lorem ipsum dolor
+            </div>
+            <div class="uc-a1-sub-header">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum exercitationem officia itaque iste,
+               distinctio perferendis ipsum aspernatur maiores necessitatibus temporibus explicabo ipsa beatae
+               incidunt
+               numquam quos suscipit qui similique dicta?
+            </div>
+            <div class="uc-a1-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatibus rerum
+               expedita adipisci ducimus. Doloribus optio possimus quis, perspiciatis nihil cumque dolorem porro rem
+               enim consequuntur libero sint, quo expedita, debitis magnam itaque sunt obcaecati. Fugiat at ad
+               perspiciatis doloribus laudantium illo voluptatum voluptatibus, eius ex dolorum necessitatibus vel
+               veniam.</div>
+            <a class="uc-a1-btn bob-on-hover" href="">До каталогу</a>
+
+         </div>
+         <!--- <div class="uc-a1-images">
+               <img src="img/03.png" alt="">
+            </div>--->
+
+      </div>
+
+   </div>
+
+   <!---------->
+
+
+   <div class="uc-all-wrapp">
+      <div class="uc-a2-panel">
+         <div class="uc-a2-content">
+            <div class="uc-a2-wrapper">
+               <div class="uc-a2-item">
+
+                  <div class="uc-a2-images uc-a2-images_1"></div>
+                  <div class="uc-a2-title">
+                     Найкраща якість
+                  </div>
+                  <div class="uc-a2-text">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut quas rem dignissimos!
+                     Voluptatibus aliquid beatae dicta, rerum in perspiciatis.
+                  </div>
+
+               </div>
+               <div class="uc-a2-item">
+                  <div class="uc-a2-images uc-a2-images_2"></div>
+                  <div class="uc-a2-title">
+                     Розумна ціна
+                  </div>
+                  <div class="uc-a2-text">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut quas rem dignissimos!
+                     Voluptatibus aliquid beatae dicta, rerum in perspiciatis.
+                  </div>
+               </div>
+               <div class="uc-a2-item">
+                  <div class="uc-a2-images uc-a2-images_3"></div>
+                  <div class="uc-a2-title">
+                     Задоволені клієнти
+                  </div>
+                  <div class="uc-a2-text">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut quas rem dignissimos!
+                     Voluptatibus aliquid beatae dicta, rerum in perspiciatis.
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!---------->
+
+   <div class="uc-all-wrapp">
+      <h2 class="uc-title">Lorem ipsum dolor, sit amet consectetur adipisicing</h2>
+      <div class="uc-a3-panel">
+         <div class="uc-a3-wrapper">
+
+            <div class="uc-a3-item uc-a3-item-none">
+               <div class="uc-a3-image">
+                  <img style="transform: rotateY(180deg);"
+                     src="https://internetsolution.com.ua/Pictures/testdesign/a3.jpg" alt="">
+               </div>
+
+            </div>
+
+            <div class="uc-a3-item uc-a3-item-hov1 uc-a3-item-small-none">
+               <div class="uc-a3-image">
+                  <img src="https://internetsolution.com.ua/Pictures/testdesign/a1.jpg" alt="">
+               </div>
+
+            </div>
+            <div class="uc-a3-item uc-a3-item-special uc-a3-item-hov2">
+               <div class="uc-a3-item-content">
+                  <div class="uc-a3-item-cont-title">Lorem, ipsum.</div>
+                  <div class="uc-a3-item-cont-text">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ab quidem, illum voluptatem
+                        velit iste deserunt nostrum in quisquam veniam nemo quo eaque vero hic voluptas vel. Et, nihil!
+                        Dolore!</p>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, consectetur! Ducimus aliquam
+                        deleniti eligendi modi?</p>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, consectetur! Ducimus aliquam
+                        deleniti eligendi modi?</p>
+
+
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="uc-a3-wrapper">
+            <div class="uc-a3-item uc-a3-item-special uc-a3-item-hov3">
+               <div class="uc-a3-item-content">
+                  <div class="uc-a3-item-cont-title">Lorem, ipsum.</div>
+                  <div class="uc-a3-item-cont-text">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ab quidem, illum voluptatem
+                        velit iste deserunt nostrum in quisquam veniam nemo quo eaque vero hic voluptas vel. Et, nihil!
+                        Dolore!</p>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, consectetur! Ducimus aliquam
+                        deleniti eligendi modi?</p>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, consectetur! Ducimus aliquam
+                        deleniti eligendi modi?</p>
+
+
+                  </div>
+               </div>
+            </div>
+            <div class="uc-a3-item uc-a3-item-hov4 uc-a3-item-small-none">
+               <div class="uc-a3-image">
+                  <img src="https://internetsolution.com.ua/Pictures/testdesign/a2.jpg" alt="">
+               </div>
+
+            </div>
+            <div class="uc-a3-item uc-a3-item-none uc-a3-item-small-none">
+               <div class="uc-a3-image">
+                  <img src="https://internetsolution.com.ua/Pictures/testdesign/a6.jpg" alt="">
+               </div>
+
+            </div>
+         </div>
+
+         <div class="uc-a3-wrapper">
+            <div class="uc-a3-item uc-a3-item-none uc-a3-item-small-none">
+               <div class="uc-a3-image">
+                  <img style="transform: rotateY(180deg);"
+                     src="https://internetsolution.com.ua/Pictures/testdesign/a5.jpg" alt="">
+               </div>
+
+            </div>
+
+            <div class="uc-a3-item uc-a3-item-hov1 uc-a3-item-small-none">
+               <div class="uc-a3-image">
+                  <img src="https://internetsolution.com.ua/Pictures/testdesign/a4.jpg" alt="">
+               </div>
+
+            </div>
+            <div class="uc-a3-item uc-a3-item-special uc-a3-item-hov2">
+               <div class="uc-a3-item-content">
+                  <div class="uc-a3-item-cont-title">Lorem, ipsum.</div>
+                  <div class="uc-a3-item-cont-text">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ab quidem, illum voluptatem
+                        velit iste deserunt nostrum in quisquam veniam nemo quo eaque vero hic voluptas vel. Et, nihil!
+                        Dolore!</p>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, consectetur! Ducimus aliquam
+                        deleniti eligendi modi?</p>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, consectetur! Ducimus aliquam
+                        deleniti eligendi modi?</p>
+
+
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+      <p style="text-align: center;clear:both;padding-top:10px;"><a class="uc-a1-btn bob-on-hover" href="">Відгуки
+            клієнтів</a></p>
+   </div>
+
+   <!---------------------->
+
+   <div class="uc-all-wrapp">
+      <h2 class="uc-title">Lorem ipsum dolor, sit amet consectetur adipisicing</h2>
+      <div class="uc-a4-panel">
+         <div class="uc-a4-wrapper">
+
+            <div class="uc-a4-item uc-a4-item-1">
+               <div class="uc-a4-images"><img src="https://internetsolution.com.ua/Pictures/testdesign/009-icon.png"
+                     alt=""></div>
+               <div class="uc-a4-title">
+                  Оформлення замовлення
+               </div>
+               <div class="uc-a4-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut quas rem dignissimos!
+                  Voluptatibus aliquid beatae dicta, rerum in perspiciatis.
+               </div>
+            </div>
+
+            <div class="uc-a4-item uc-a4-item-2">
+               <div class="uc-a4-images"><img src="https://internetsolution.com.ua/Pictures/testdesign/010-icon.png"
+                     alt=""></div>
+               <div class="uc-a4-title">
+                  Оплата товару
+               </div>
+               <div class="uc-a4-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut quas rem dignissimos!
+                  Voluptatibus aliquid beatae dicta, rerum in perspiciatis.
+               </div>
+            </div>
+
+            <div class="uc-a4-item uc-a4-item-3">
+               <div class="uc-a4-images"><img src="https://internetsolution.com.ua/Pictures/testdesign/011-icon.png"
+                     alt=""></div>
+               <div class="uc-a4-title">
+                  Зручна доставка
+               </div>
+               <div class="uc-a4-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aut quas rem dignissimos!
+                  Voluptatibus aliquid beatae dicta, rerum in perspiciatis.
+               </div>
+            </div>
+
+
+         </div>
+
+      </div>
+   </div>
+   <div class="uc-all-wrapp">
+      <h2 class="uc-title">Lorem ipsum dolor, sit amet consectetur adipisicing</h2>
+
+      <img style="width: 0.001px; height: 0.001px;"
+         src="https://internetsolution.com.ua/Pictures/testdesign/007-icon.png" alt="FAQ">
+
+      </h2>
+
+      <div itemscope itemtype="https://schema.org/FAQPage" class="uc-a5-panel">
+         <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <summary itemprop="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, error ratione?
+
+
+            </summary>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+               <p itemprop="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, facere enim aliquam
+                  excepturi laudantium tenetur quidem rem, repellendus illo perferendis consectetur eum, odio architecto
+                  aperiam nobis accusantium dolor laborum voluptatum exercitationem ipsum placeat temporibus. Totam,
+                  nesciunt nihil. Sunt, minus! Earum eligendi eaque voluptates voluptatibus natus officiis itaque!
+                  Explicabo, commodi officia.
+
+
+
+               </p>
+            </div>
+         </details>
+         <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <summary itemprop="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, error ratione?
+
+            </summary>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+               <p itemprop="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, facere enim aliquam
+                  excepturi laudantium tenetur quidem rem, repellendus illo perferendis consectetur eum, odio architecto
+                  aperiam nobis accusantium dolor laborum voluptatum exercitationem ipsum placeat temporibus. Totam,
+                  nesciunt nihil. Sunt, minus! Earum eligendi eaque voluptates voluptatibus natus officiis itaque!
+                  Explicabo, commodi officia.
+
+               </p>
+            </div>
+         </details>
+         <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <summary itemprop="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, error ratione?
+
+            </summary>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+               <p itemprop="text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, facere enim aliquam excepturi
+                  laudantium tenetur quidem rem, repellendus illo perferendis consectetur eum, odio architecto aperiam
+                  nobis accusantium dolor laborum voluptatum exercitationem ipsum placeat temporibus. Totam, nesciunt
+                  nihil. Sunt, minus! Earum eligendi eaque voluptates voluptatibus natus officiis itaque! Explicabo,
+                  commodi officia.
+
+
+               </p>
+            </div>
+         </details>
+         <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <summary itemprop="name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, error ratione?
+
+            </summary>
+            <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+               <p itemprop="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, facere enim aliquam
+                  excepturi laudantium tenetur quidem rem, repellendus illo perferendis consectetur eum, odio architecto
+                  aperiam nobis accusantium dolor laborum voluptatum exercitationem ipsum placeat temporibus. Totam,
+                  nesciunt nihil. Sunt, minus! Earum eligendi eaque voluptates voluptatibus natus officiis itaque!
+                  Explicabo, commodi officia.
+
+
+
+               </p>
+            </div>
+         </details>
+         <p style="text-align: center;clear:both;padding-top:10px;"><a class="uc-a1-btn bob-on-hover" href="">Контактна
+               інформація</a></p>
+      </div>
+   </div>
+</body>
+
+</html>
